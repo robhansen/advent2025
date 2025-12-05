@@ -15,8 +15,6 @@ with open(sys.argv[1]) as file:
 
 for i in range(len(fresh_ranges)):
     this_range = fresh_ranges[i]
-    if this_range is None:
-        break
     for j in range(i+1, len(fresh_ranges)):
         if fresh_ranges[j] is None:
             break
